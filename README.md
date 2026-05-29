@@ -12,6 +12,43 @@ This project is structured as a modular backend system:
 - Celery workers for asynchronous heavy jobs
 - Test suite for parser, scoring, and API behavior
 
+## Tech Stack
+🚀 Backend & API
+   - Python 3.10+
+   - FastAPI — high-performance API framework
+   - Pydantic — data validation & schemas
+
+🧬 Bioinformatics Pipeline
+   - VCF Parsing
+   - cyvcf2 / pysam
+   - Variant Normalization
+   - bcftools
+   - Variant Annotation
+   - Ensembl Variant Effect Predictor (VEP)
+   - Clinical Database
+   - ClinVar
+     
+🤖 AI / ML Layer
+   - LocalLLM ( local model) — explanation & summarization
+   - Evo2  — functional impact prediction for unknown variants
+     
+🧠 Data Processing & Orchestration
+   - Celery — async task queue
+   - Redis — message broker / caching
+     
+🗄️ Database
+   - PostgreSQL — store variants & reports
+     
+🐳 DevOps & Deployment
+   - Docker & Docker Compose — containerization
+   - Makefile — reproducible commands
+     
+🧪 Testing
+   - Pytest — unit & integration tests
+     
+💻 Frontend (Optional)
+   - React / Next.js — dashboard & visualization
+
 ## Project Structure
 
 ```text
